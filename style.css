@@ -54,11 +54,11 @@ body {
 
 @media (max-width : 500px) {
     .abtme {
-        margin-top: 50vw;
+        margin-top: 20vw;
     }
 
     .page1 {
-        padding-top: 0vw;
+        padding-top: 25vw;
     }
 }
 
