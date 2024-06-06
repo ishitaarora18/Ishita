@@ -275,22 +275,11 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
-
-#email {
-    height: 42px;
-    border: none;
-    font-family: DM Sans, sans-serif;
-    border-radius: 6px;
-    font-size: 20px;
-    color: #181834;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
 #message {
     border: none;
     border-radius: 6px;
     font-size: 20px;
+    font-family: DM Sans, sans-serif;
     color: #181834;
     padding-left: 5px;
     padding-right: 5px;
@@ -361,7 +350,7 @@ body {
     }
 
     #email {
-        height: 28px;
+        height: 41px;
     }
 
     #message {
