@@ -6,15 +6,20 @@
 body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(#001a30, #001a30);
+    background-color: rgb(18, 18, 18);
+
+    font-weight: bolder;
 }
 
 .page1 {
     padding-top: 5vw;
+    text-shadow: 6px 6px 20px rgba(100, 100, 100, 0.3);
+
 }
 
 .mainheading {
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     font-size: 14vw;
     padding: 0 2vw;
     letter-spacing: -0.35vw;
@@ -71,8 +76,8 @@ body {
 }
 
 .metext {
-    font-family: futura;
-    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     font-size: 47%;
     color: white;
     padding: 5vw;
@@ -103,7 +108,7 @@ body {
 
 .meimg img {
     height: 100%;
-    box-shadow: 20px 20px white;
+    box-shadow: 20px 20px #dbdbdb;
 }
 
 @media (max-width : 700px) {
@@ -137,7 +142,7 @@ body {
 
 .skillname {
     font-size: 6vw;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     margin-right: 2vw;
 }
@@ -157,8 +162,8 @@ body {
     font-size: 8vw;
     color: white;
     text-align: center;
-    padding-top: 4vw;
-    font-family: futura;
+    padding-top: 6vw;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 3vw;
 }
 
@@ -177,7 +182,7 @@ body {
 .centered a button {
     height: 50px;
     width: 220px;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
     color: #7E22CE;
     transition: all ease 0.3s;
@@ -199,6 +204,33 @@ body {
     transform: scale(1.01);
 }
 
+.exp {
+    margin: 0 4vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid white;
+    padding: 2vw;
+    background: linear-gradient(to right, #7E22CE, #680bb9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.expname {
+    font-size: 4vw;
+}
+
+.expdate {
+    font-size: 2vw;
+    margin-top: 0.3vw;
+    margin-bottom: 2.4vw;
+    font-style: italic;
+}
+
+.expneno {
+    font-size: 1.6vw;
+    margin-top: 0.4vw;
+    padding-left: 1.3vw;
+}
+
 .project {
     margin: 2vw 4vw;
     border: 2px solid white;
@@ -206,29 +238,31 @@ body {
     padding-bottom: 2vw;
     margin-bottom: 6vw;
     transition: all ease 0.5s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+
 }
 
 .project:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .projecthead {
     font-size: 4.2vw;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 2vw;
 }
 
 .projecttext {
     font-size: 2vw;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 2vw;
 }
 
 .projectlink a {
     font-size: 2.5vw;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 2vw;
 }
@@ -247,7 +281,7 @@ body {
     justify-content: center;
     align-items: center;
     color: White;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
 
@@ -275,6 +309,7 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 #message {
     border: none;
     border-radius: 6px;
@@ -289,7 +324,7 @@ body {
     display: inline-block;
     margin-bottom: 5px;
     font-size: 23px;
-    font-family: futura;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -320,15 +355,15 @@ body {
     height: 40px;
     width: 120px;
     border-radius: 5px;
-    background-color: #9154cf;
-    font-family: futura;
+    background-color: #863ccf;
+    font-family: 'Montserrat', sans-serif;
     font-size: 110%;
     color: white;
     border: 3px solid #0D0D1E;
 }
 
 .mid button:hover {
-    background-color: #9b3ef8;
+    background-color: #60378a;
 }
 
 @media (max-width : 700px) {
@@ -406,6 +441,7 @@ footer {
 
 .copyright {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 #C a img:hover {
