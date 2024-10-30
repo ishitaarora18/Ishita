@@ -14,3 +14,14 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+const toggleButton = document.getElementById("toggleButton");
+
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("darkmode");
+    // Change button text based on current mode
+    if (document.body.classList.contains("darkmode")) {
+        toggleButton.textContent = "Light";
+    } else {
+        toggleButton.textContent = "Dark";
+    }
+});
