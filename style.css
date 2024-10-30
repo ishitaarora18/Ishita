@@ -6,15 +6,26 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(18, 18, 18);
+    background: 
+    linear-gradient(135deg, #e1e1e1, #c789e5 40%), 
+    linear-gradient(225deg, #d192de, #7c419e5a 60%);
 
     font-weight: bolder;
 }
 
-.page1 {
-    padding-top: 5vw;
-    text-shadow: 6px 6px 20px rgba(22, 22, 22, 0.5);
+body.darkmode{
+    background: linear-gradient(135deg, rgb(18, 18, 18), rgb(50, 50, 50),rgb(22, 22, 22));
 
+}
+
+.page1 {
+    padding-top: 3vw;
+    /* text-shadow: 6px 6px 20px rgba(22, 22, 22, 0.5); */
+    text-shadow: 6px 6px 20px rgba(178, 178, 178, 0.5); 
+}
+
+body.darkmode .page1{
+    text-shadow: 6px 6px 20px rgba(22, 22, 22, 0.5);
 }
 
 .mainheading {
@@ -36,6 +47,11 @@ body {
 }
 
 #secondp {
+    /* color: white; */
+    color: #353535;
+}
+
+body.darkmode #secondp{
     color: white;
 }
 
@@ -79,11 +95,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 47%;
-    color: white;
+    /* color: white; */
+    color: #353535;
     padding: 5vw;
     width: 100%;
 }
-
+body.darkmode .metext{
+    color: white;
+}
 .metext a {
     text-decoration: none;
     color: #8835d0;
@@ -108,6 +127,11 @@ body {
 
 .meimg img {
     height: 100%;
+    /* box-shadow: 20px 20px #dbdbdb; */
+    box-shadow: 20px 20px #353535;
+}
+
+body.darkmode .meimg img{
     box-shadow: 20px 20px #dbdbdb;
 }
 
@@ -124,7 +148,7 @@ body {
 
     .meimg img {
         height: 100%;
-        box-shadow: 8px 8px #ffffff;
+        box-shadow: 8px 8px ;
     }
 
     .leftme {
@@ -143,8 +167,12 @@ body {
 .skillname {
     font-size: 6vw;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #353535;
     margin-right: 2vw;
+}
+
+body.darkmode .skillname{
+    color: #fff;
 }
 
 .skillimg {
@@ -160,11 +188,15 @@ body {
 
 .skillheading {
     font-size: 8vw;
-    color: white;
+    color: #353535;
     text-align: center;
     padding-top: 6vw;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 3vw;
+}
+
+body.darkmode .skillheading{
+    color: white;
 }
 
 .centered {
@@ -280,9 +312,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: White;
+    color: #353535;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+}
+
+body.darkmode .contactme{
+    color: white;
 }
 
 .container {
@@ -359,7 +395,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 110%;
     color: white;
-    border: 3px solid #0D0D1E;
 }
 
 .mid button:hover {
@@ -451,5 +486,51 @@ footer {
 .pageline {
     height: 1px;
     margin: 60px 110px 0 110px;
+    background-color: rgba(57, 57, 57, 0.571);
+}
+
+body.darkmode .pageline{
     background-color: rgba(255, 255, 255, 0.571);
+}
+
+.toggle-container {
+    position: relative;
+}
+
+.toggle-button {
+    
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a461cb; /* Light mode button color */
+    color: rgb(255, 255, 255); /* Light mode button text color */
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+body.darkmode .toggle-button {
+    background-color: #7e4b9c; /* Dark mode button color */
+    color: white; /* Dark mode button text color */
+}
+
+
+  .button-right {
+    position: absolute;
+    right: 20px;
+    top:20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 400px){
+    .toggle-button {
+        width: 45px;
+    height: 45px;
+    font-size: 11px;
+    }
 }
